@@ -1,0 +1,132 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6617000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is logged in",
+            "match": {
+              "location": "com.zerobank.step_definitions.LoginStepDefs.the_user_has_logged_in_the_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3111000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user navigates to page \"Pay Bills\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Pay Bills\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.zerobank.step_definitions.AccountActivityDefs.the_user_navigates_to_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-15T09:16:10.450Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6841000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Error message for not entering value",
+        "description": "",
+        "id": "purchase-foreign-currency;error-message-for-not-entering-value",
+        "after": [
+          {
+            "result": {
+              "duration": 3788000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 658000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user accesses the \"Purchase Foreign Currency\" cash tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Purchase Foreign Currency\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.step_definitions.PayBillsDefs.theUserAccessesTheCashTab(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 640000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user tries to calculate cost without entering a value",
+            "match": {
+              "location": "com.zerobank.step_definitions.PayBillsDefs.userTriesToCalculateCostWithoutEnteringAValue()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4012000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "com.zerobank.step_definitions.PayBillsDefs.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase Foreign Currency",
+    "description": "",
+    "id": "purchase-foreign-currency",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
+    "tags": []
+  }
+]

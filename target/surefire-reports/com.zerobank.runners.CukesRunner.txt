@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobank.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.814 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+initializationError(com.zerobank.runners.CukesRunner)  Time elapsed: 0.01 s  <<< ERROR!
+io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/User/IdeaProjects/ZeroOnlineBanking/src/test/resources/features/FindTransactions.feature
+Caused by: io.cucumber.core.gherkin.vintage.internal.gherkin.ParserException$CompositeParserException: 
+Parser errors:
+(11:5): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And	clicks search'
+(15:5): expected: #EOF, #TableRow, #DocStringSeparator, #StepLine, #TagLine, #ScenarioLine, #ScenarioOutlineLine, #Comment, #Empty, got 'And	clicks search'
+
